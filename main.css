@@ -6,8 +6,16 @@
 
 /* login page :: background image */
 .custom-login #page-outer {
-    background: linear-gradient( rgba(112, 13, 18, 0.35), rgba(112, 13, 18, 0.35) ), url('https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg');
-    background-size: cover;
+  --s: 200px; /* control the size */
+  --c1: #101010;
+  --c2: #4f4f51;
+  --c3: #282828;
+  
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+     calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+  background-size: var(--s) calc(var(--s)*0.577);
 }
 
 /* login page :: center logo */
@@ -20,18 +28,19 @@
 
 /* course enrollment page :: fonts */
 #page-enrol-index .course-header .course-categories-tree {
-    color: #F2F2F2;
+    color: #f2f2f2;
 }
 
 /* course enrollment page :: header background */
 #page-enrol-index .course-header {
-    /*background-image: none !important;*/
-    background-image: url('https://fastly.picsum.photos/id/806/950/250.jpg?hmac=1GrGYhdiI7-FKKUh_42H-6_02p21UHFKsqYbMsnYddI') !important;
+    background-image: none !important;
+    background-color: #282828 !important;
 }
 
 /* course content page :: custom image for banner */
 .format-topics #page-header .page-header-img {
-    background-image: url("https://images.pexels.com/photos/15848934/pexels-photo-15848934/free-photo-of-black-and-red-abstract-background.jpeg") !important;
+    background-image: none !important;
+    background-color: #282828; !important;
 }
 
 #page-header {
@@ -52,7 +61,6 @@
 /* scorm player :: ensure background always black and text is white */
 #page-mod-scorm-player  {
     background-color: #282828;
-    #background-color: #101010;
     color: #f2f2f2;
 }
 
