@@ -35,7 +35,7 @@
 }
 
 #page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/15848934/pexels-photo-15848934/free-photo-of-black-and-red-abstract-background.jpeg?auto=compress&cs=tinysrgb&w=950&h=250&dpr=11');
+    background-color: #282828;
 }
 
 /* course overview page :: custom image for banner */
