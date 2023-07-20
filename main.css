@@ -1,0 +1,79 @@
+/* login page :: increase logo size */
+.custom-login .main-logo .logo-light.is_svg,
+.custom-login .main-logo .logo-dark.is_svg {
+    height: 80px !important;
+}
+
+/* login page :: background image */
+.custom-login #page-outer {
+    background: linear-gradient( rgba(112, 13, 18, 0.35), rgba(112, 13, 18, 0.35) ), url('https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg');
+    background-size: cover;
+}
+
+/* login page :: center logo */
+.custom-login .logo-wrap,
+.custom-login .logo-wrap img {
+    margin-right: 0px;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* course enrollment page :: fonts */
+#page-enrol-index .course-header .course-categories-tree {
+    color: #F2F2F2;
+}
+
+/* course enrollment page :: header background */
+#page-enrol-index .course-header {
+    /*background-image: none !important;*/
+    background-image: url('https://fastly.picsum.photos/id/806/950/250.jpg?hmac=1GrGYhdiI7-FKKUh_42H-6_02p21UHFKsqYbMsnYddI') !important;
+}
+
+/* course content page :: custom image for banner */
+.format-topics #page-header .page-header-img {
+    background-image: url("https://images.pexels.com/photos/15848934/pexels-photo-15848934/free-photo-of-black-and-red-abstract-background.jpeg") !important;
+}
+
+#page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/15848934/pexels-photo-15848934/free-photo-of-black-and-red-abstract-background.jpeg?auto=compress&cs=tinysrgb&w=950&h=250&dpr=11');
+}
+
+/* course overview page :: custom image for banner */
+#page-course-index-category .theme-header .theme-header-bg,
+.format-topics .theme-header .theme-header-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+}
+
+/* course overview page :: reduce margin between course banner and listing */
+#page-course-index-category .generalbox.info {
+    margin-bottom: 1rem;
+}
+
+/* scorm player :: ensure background always black and text is white */
+#page-mod-scorm-player  {
+    background-color: #282828;
+    #background-color: #101010;
+    color: #f2f2f2;
+}
+
+#page-mod-scorm-player .h3 {
+    color: #f2f2f2;
+}
+
+/* scorm player :: ensure player fills window completely */
+#page-mod-scorm-player #scormpage #scorm_object {
+    width: 100%;
+    height: 100%;
+}
+
+/* scorm player :: hide "View Certificated Issued" link as we do not preserve them */
+#page-mod-iomadcertificate-view .reportlink {
+    display: none;
+}
+
+/* hide unused items */
+.block_navigation,
+.block_settings,
+#footer .footer-tools {
+    display: none;
+}
