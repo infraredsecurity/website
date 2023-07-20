@@ -6,16 +6,15 @@
 
 /* login page :: background image */
 .custom-login #page-outer {
-  --s: 200px; /* control the size */
-  --c1: #101010;
-  --c2: #4f4f51;
-  --c3: #282828;
-  
-  background:
-    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
-     calc(.5*var(--s)) calc(.5*var(--s)*0.577),
-    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
-  background-size: var(--s) calc(var(--s)*0.577);
+    /* starry night: https://projects.verou.me/css3patterns/#starry-night */
+    background-color: #282828;
+    background-image:
+    radial-gradient(#880e12, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(#880e12, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(#880e12, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 /* login page :: center logo */
