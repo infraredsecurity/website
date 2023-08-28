@@ -42,11 +42,6 @@
     width: 100%;
 }
 
-/* banners */
-.mb2-pb-row.banner a.mb2-pb-btn:hover {
-    background-color: black
-}
-
 /* course enrollment page :: fonts */
 #page-enrol-index .course-header .course-categories-tree {
     color: #f2f2f2;
