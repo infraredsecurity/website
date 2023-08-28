@@ -1,8 +1,3 @@
-/* override variables */
-:root {
-    --mb2-pb-btn-bghcolor: black;
-}
-
 /* general styles */
 .h-full {
     height: 100%;
@@ -45,6 +40,11 @@
     margin-right: 0px;
     max-width: 100%;
     width: 100%;
+}
+
+/* banners */
+.mb2-pb-row.banner a.mb2-pb-btn:hover {
+    background-color: black
 }
 
 /* course enrollment page :: fonts */
@@ -101,7 +101,7 @@
 }
 
 /* hide unused items */
-.block_navigation,
+/*.block_navigation,*/
 .block_settings,
 #footer .footer-tools {
     display: none;
