@@ -1,3 +1,8 @@
+/* override variables */
+:root {
+    --mb2-pb-btn-bghcolor: black;
+}
+
 /* general styles */
 .h-full {
     height: 100%;
