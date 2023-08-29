@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log('admin menu callback triggered');
     // display admin menus
     if ($('#quicklinks li.item-admin').length > 0) {
         console.log('enabling quick links...');
@@ -17,8 +18,9 @@ $(document).ready(function() {
     };
     fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php', request)
         .then((response) => {
+            console.log(response);
             if (response.status === 200) {
-                console.log('enabling company admin menus: ' + response.status);
+                console.log('enabling company admin menus');
                 $('.mitem_users').attr('style', 'display: flex !important');
                 $('.mitem_reports').attr('style', 'display: flex !important');
             }
