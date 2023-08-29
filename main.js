@@ -11,7 +11,8 @@ $(document).ready(function() {
                 $('.mitem_users').css('display', 'flex');
                 $('.mitem_reports').css('display', 'flex');
             }
-        });
+        })
+        .catch((error) => {});
 
     // convert uk-english to us-english
     $('.course-enrolbtn').each(function() {
