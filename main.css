@@ -11,6 +11,11 @@
     text-align: center;
 }
 
+/* hide menus for elevated roles */
+#quicklinks {
+    display: none;
+}
+
 /* login page :: increase logo size */
 .custom-login .main-logo .logo-light.is_svg,
 .custom-login .main-logo .logo-dark.is_svg {
