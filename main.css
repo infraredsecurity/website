@@ -12,7 +12,9 @@
 }
 
 /* hide menus for elevated roles */
-#quicklinks {
+#quicklinks,
+.mitem_users,
+.mitem_reports {
     display: none;
 }
 
