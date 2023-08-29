@@ -15,7 +15,7 @@
 #quicklinks,
 .mitem_users,
 .mitem_reports {
-    display: none;
+    display: none !important;
 }
 
 /* login page :: increase logo size */
