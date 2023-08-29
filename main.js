@@ -8,8 +8,8 @@ $(document).ready(function() {
     fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php')
         .then((response) => {
             if (response.status == 200) {
-                $('.mitem_users').css('display', 'flex');
-                $('.mitem_reports').css('display', 'flex');
+                $('.mitem_users').css('display', 'flex !important');
+                $('.mitem_reports').css('display', 'flex !important');
             }
         })
         .catch((error) => {});
