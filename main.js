@@ -1,4 +1,3 @@
-<script>
 $(document).ready(function() {
     // display admin menus
     if ($('#quicklinks li.item-admin').length > 0) {
@@ -22,4 +21,3 @@ $(document).ready(function() {
         }
     });
 });
-</script>
