@@ -12,7 +12,8 @@ $(document).ready(function() {
     };
     let request = {
         method: 'HEAD',
-        headers: headers
+        headers: headers,
+        redirect: 'manual'
     };
     fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php', request)
         .then((response) => {
