@@ -6,7 +6,7 @@ $(document).ready(function() {
     }
 
     // display 'users' and 'reports' menus if user has permission to create users
-    fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php', { method: 'GET' })
+    fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php', { method: 'HEAD' })
         .then((response) => {
             if (response.status == 200) {
                 console.log('enabling company admin menus');
