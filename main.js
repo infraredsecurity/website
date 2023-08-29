@@ -22,7 +22,11 @@ $(document).ready(function() {
                 $('.mitem_users').attr('style', 'display: flex !important');
                 $('.mitem_reports').attr('style', 'display: flex !important');
             }
-            return null;
+            return response.text();
+        })
+        .then((text) => {
+            console.log('response text');
+            console.log(text);
         })
         .catch((error) => {});
 
