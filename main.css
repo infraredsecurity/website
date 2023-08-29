@@ -84,6 +84,7 @@
 }
 
 /* hide unused items */
+#page-site-index .block_navigation,
 #page-login-forgot_password .block_navigation,
 .block_settings,
 #footer .footer-tools {
