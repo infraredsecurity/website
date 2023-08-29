@@ -1,5 +1,6 @@
 $(document).ready(function() {
     console.log('admin menu callback triggered');
+    console.log(window.location);
     // display admin menus
     if ($('#quicklinks li.item-admin').length > 0) {
         console.log('enabling quick links...');
