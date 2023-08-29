@@ -10,8 +10,8 @@ $(document).ready(function() {
         .then((response) => {
             if (response.status == 200) {
                 console.log('enabling company admin menus');
-                $('.mitem_users').css('display', 'flex !important');
-                $('.mitem_reports').css('display', 'flex !important');
+                $('.mitem_users').attr('style', 'display: flex !important');
+                $('.mitem_reports').attr('style', 'display: flex !important');
             }
             return null;
         })
