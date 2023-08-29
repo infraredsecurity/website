@@ -11,6 +11,7 @@ $(document).ready(function() {
                 $('.mitem_users').css('display', 'flex !important');
                 $('.mitem_reports').css('display', 'flex !important');
             }
+            return null;
         })
         .catch((error) => {});
 
