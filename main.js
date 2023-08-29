@@ -16,8 +16,8 @@ $(document).ready(function() {
     };
     fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php', request)
         .then((response) => {
-            if (response.status == 200) {
-                console.log('enabling company admin menus');
+            if (response.status === 200) {
+                console.log('enabling company admin menus: ' + response.status);
                 $('.mitem_users').attr('style', 'display: flex !important');
                 $('.mitem_reports').attr('style', 'display: flex !important');
             }
