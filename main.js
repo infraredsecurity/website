@@ -16,7 +16,7 @@ $(document).ready(function() {
         headers: headers,
         redirect: 'manual'
     };
-    fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php', request)
+    /*fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php', request)
         .then((response) => {
             console.log(response);
             if (response.status === 200) {
@@ -30,7 +30,7 @@ $(document).ready(function() {
             console.log('response text');
             console.log(text);
         })
-        .catch((error) => {});
+        .catch((error) => {});*/
 
     // convert uk-english to us-english
     console.log('converting to us-english...');
