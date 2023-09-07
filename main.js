@@ -8,7 +8,7 @@ $(document).ready(function() {
     }
 
     // display 'users' and 'reports' if navigation block says so
-    if($('#settingsnav .type_course').length > 0) {
+    if($('.block_navigation .type_course').length > 0) {
         console.log('enabling company admin menus');
         $('.mitem_users').attr('style', 'display: flex !important');
         $('.mitem_reports').attr('style', 'display: flex !important');
