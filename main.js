@@ -16,10 +16,12 @@ $(document).ready(function() {
 
     // convert uk-english to us-english
     console.log('converting to us-english...');
-    $('.course-enrolbtn').each(function() {
+    $('a,h1,h2,h3,h4,h5,h6,p,span,button').each(function() {
         let text = $(this).text();
-        if (text === 'Enrol now') {
-            $(this).text('Enroll now');
-        }
+        text = text.replace('Enrolment', 'Enrollment');
+        text = text.replace('enrolment', 'enrollment');
+        text = text.replace('Enrol ', 'Enroll ');
+        text = text.replace('enrol ', 'enroll ');
+        $(this).text(text);
     });
 });
