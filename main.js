@@ -7,31 +7,12 @@ $(document).ready(function() {
         $('#quicklinks').attr('style', 'display: flex !important');
     }
 
-    // display 'users' and 'reports' menus if user has permission to create users
-    let headers = {
-        'pragma': 'no-cache',
-        'cache-control': 'no-cache',
-    };
-    let request = {
-        method: 'HEAD',
-        headers: headers,
-        redirect: 'manual'
-    };
-    fetch('/lms/blocks/iomad_company_admin/company_user_create_form.php', request)
-        .then((response) => {
-            console.log(response);
-            if (response.status === 200) {
-                console.log('enabling company admin menus');
-                $('.mitem_users').attr('style', 'display: flex !important');
-                $('.mitem_reports').attr('style', 'display: flex !important');
-            }
-            return response.text();
-        })
-        .then((text) => {
-            console.log('response text');
-            console.log(text);
-        })
-        .catch((error) => {});
+    // display 'users' and 'reports' if navigation block says so
+    if($('#settingsnav .type_course').length > 0) {
+        console.log('enabling company admin menus');
+        $('.mitem_users').attr('style', 'display: flex !important');
+        $('.mitem_reports').attr('style', 'display: flex !important');
+    }
 
     // convert uk-english to us-english
     console.log('converting to us-english...');
