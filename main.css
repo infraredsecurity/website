@@ -93,6 +93,7 @@
 /* hide unused items */
 .block_navigation,
 .block_settings,
+.page-breadcrumb,
 #footer .footer-tools {
     display: none;
 }
