@@ -90,6 +90,13 @@
     display: none;
 }
 
+/* course enrollment sidebar margin adjusted to compensate for our other changes */
+@media only screen and (min-width: 992px) {
+  .enrollment-layout-3 .enrol-sidebar {
+    margin-top: inherit !important;
+  }
+}
+
 /* hide unused items */
 .block_navigation,
 .block_settings,
