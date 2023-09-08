@@ -16,25 +16,24 @@ $(document).ready(function() {
 
     // convert uk-english to us-english
     console.log('converting to us-english...');
-    $('.course-enrolbtn').each(function() {
+    let englishReplacements = {
+        'enrol ': 'enroll ',
+        'Enrol ': 'Enroll ',
+        'enrolment': 'Enrollment',
+        'Enrolment': 'Enrollment',
+    };
+    let englishCallback = function() {
         let text = $(this).text();
-        if (text === 'Enrol now') {
-            $(this).text('Enroll now');
+        for (const [key, value] of Object.entries(englishReplacements)) {
+            text = text.replace(key, value);
         }
-    });
-
-    $('#page-enrol-index #region-main #page-content h2').each(function() {
-        let text = $(this).text();
-        if (text === 'Enrolment options') {
-            $(this).text('Enrollment options');
-        }
-    });
-
-    $('#page-enrol-index #region-main #page-content .collapsible span.sr-only').each(function() {
-        let text = $(this).text();
-        text = text.replace('enrolment', 'enrollment');
         $(this).text(text);
-    });
+    };
+    
+    $('.course-enrolbtn').each(englishCallback);
+    $('#page-enrol-index #region-main #page-content h2').each(englishCallback);
+    $('#page-enrol-index #region-main #page-content .collapsible span.sr-only').each(englishCallback);
+    $('#page-enrol-index #region-main #page-content .collapsible h3').each(englishCallback);
 
     console.log('admin menu callback finished');
 });
