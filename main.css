@@ -38,13 +38,16 @@
 }
 
 /* course banners */
+#page-course-index-category .theme-header .theme-header-bg,
 .format-topics .theme-header .theme-header-bg {
     background: none !important;
+    background-color: inherit !important;
 }
 
 #page-course-view-topics #page-content .summarytext .theme-header,
 #page-course-index-category #page-content .info .theme-header {
     background-color: rgb(136, 14, 18);
+    background-image: none !important;
     color: #f2f2f2;
 }
 
