@@ -1,5 +1,13 @@
 $(document).ready(function() {
     console.log('hack callback triggered');
+
+    // detect if guest
+    let isGuest = $('#master-header .header-tools .tool-login').length > 0;
+
+    // adjust menus for guest
+    if (isGuest) {
+        $('#main-navigation .mitem_home a.mb2mm-action').attr('href', '/lms');
+    }
     
     // display admin menus
     if ($('#quicklinks li.item-admin').length > 0) {
@@ -17,7 +25,7 @@ $(document).ready(function() {
     // make 'Enroll now' do something meaningful if user is guest
     console.log('updating buttons');
     $('#page-enrol-index .enrol-sidebar .course-enrolbtn').on('click', function(e) {
-        if ($('#master-header .header-tools .tool-login').length > 0) {
+        if (isGuest) {
             e.preventDefault();
             $('#page-enrol-index #region-main #page-content form button.btn-primary').click();
         }
