@@ -8,7 +8,7 @@ $(document).ready(function() {
     }
 
     // display 'users' and 'reports' if navigation block says so
-    if($('.block_navigation .type_course').length > 0) {
+    if($('#participants_tree_item').length > 0 || $('.block_settings').length > 0) {
         console.log('enabling company admin menus');
         $('.mitem_users').attr('style', 'display: flex !important');
         $('.mitem_reports').attr('style', 'display: flex !important');
@@ -21,6 +21,19 @@ $(document).ready(function() {
         if (text === 'Enrol now') {
             $(this).text('Enroll now');
         }
+    });
+
+    $('#page-enrol-index #region-main #page-content h2').each(function() {
+        let text = $(this).text();
+        if (text === 'Enrolment options') {
+            $(this).text('Enrollment options');
+        }
+    });
+
+    $('#page-enrol-index #region-main #page-content .collapsible span.sr-only').each(function() {
+        let text = $(this).text();
+        text = text.replace('enrolment', 'enrollment');
+        $(this).text(text);
     });
 
     console.log('admin menu callback finished');
