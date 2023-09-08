@@ -2,7 +2,7 @@ $(document).ready(function() {
     console.log('hack callback triggered');
 
     // detect if guest
-    let isGuest = $('#master-header .header-tools .tool-login').length > 0;
+    let isGuest = $('#master-header .header-tools .tool-login i.fa-user').length <= 0;
 
     // adjust menus for guest
     if (isGuest) {
