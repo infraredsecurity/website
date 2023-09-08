@@ -24,7 +24,6 @@ $(document).ready(function() {
         console.log('enabling super admin stuff...');
         $('#quicklinks').attr('style', 'display: flex !important');
         $('#page-my-index').css('display', 'initial');
-        $('.block_iomad_reports').css('display', 'initial');
     }
 
     // display 'users' and 'reports' if navigation block says so
