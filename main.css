@@ -100,6 +100,7 @@
 /* hide unused items */
 .block_navigation,
 .block_settings,
+.course-info1 .course-meta1 .course-students,
 .page-breadcrumb,
 #footer .footer-tools {
     display: none;
