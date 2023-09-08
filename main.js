@@ -1,8 +1,18 @@
 $(document).ready(function() {
     console.log('hack callback triggered');
 
-    // detect if guest
+    // detect some roles
     let isGuest = $('#master-header .header-tools .tool-login i.fa-user').length <= 0;
+    let isSuperAdmin = $('#quicklinks li.item-admin').length > 0;
+
+    // dashboard 2023 redirect
+    if ($('#page-my-index').length > 0) {
+        if (isSuperAdmin) {
+            $('#page-my-index').css('display', 'initial');
+        } else {
+            window.location = '/lms/mod/page/view.php?id=102';
+        }
+    }
 
     // adjust menus for guest
     if (isGuest) {
@@ -11,10 +21,11 @@ $(document).ready(function() {
         $('#main-navigation .mitem_home a.mb2mm-action').attr('href', href);
     }
     
-    // display admin menus
-    if ($('#quicklinks li.item-admin').length > 0) {
-        console.log('enabling quick links...');
+    // display super admin stuff
+    if (isSuperAdmin) {
+        console.log('enabling super admin stuff...');
         $('#quicklinks').attr('style', 'display: flex !important');
+        $('#page-my-index').css('display', 'initial');
     }
 
     // display 'users' and 'reports' if navigation block says so
