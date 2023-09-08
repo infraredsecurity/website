@@ -37,6 +37,13 @@
     width: 100%;
 }
 
+/* course banners */
+#page-course-view-topics #page-content .summarytext .theme-header,
+#page-course-index-category #page-content .info .theme-header {
+    background-color: #282828;
+    color: #f2f2f2;
+}
+
 /* course enrollment page :: fonts */
 #page-enrol-index .course-header .course-categories-tree {
     color: #f2f2f2;
