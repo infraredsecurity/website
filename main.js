@@ -7,9 +7,7 @@ $(document).ready(function() {
 
     // dashboard 2023 redirect
     if ($('#page-my-index').length > 0) {
-        if (isSuperAdmin) {
-            $('#page-my-index').css('display', 'initial');
-        } else {
+        if (!isSuperAdmin) {
             window.location = '/lms/mod/page/view.php?id=102';
         }
     }
@@ -26,10 +24,11 @@ $(document).ready(function() {
         console.log('enabling super admin stuff...');
         $('#quicklinks').attr('style', 'display: flex !important');
         $('#page-my-index').css('display', 'initial');
+        $('.block_iomad_reports').css('display', 'initial');
     }
 
     // display 'users' and 'reports' if navigation block says so
-    if($('#participants_tree_item').length > 0 || $('.block_settings').length > 0) {
+    if($('.block_iomad_reports').length > 0) {
         console.log('enabling company admin menus');
         $('.mitem_users').attr('style', 'display: flex !important');
         $('.mitem_reports').attr('style', 'display: flex !important');
