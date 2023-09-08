@@ -38,9 +38,13 @@
 }
 
 /* course banners */
+.format-topics .theme-header .theme-header-bg {
+    background: none !important;
+}
+
 #page-course-view-topics #page-content .summarytext .theme-header,
 #page-course-index-category #page-content .info .theme-header {
-    background-color: #282828;
+    background-color: rgb(136, 14, 18);
     color: #f2f2f2;
 }
 
