@@ -118,6 +118,7 @@
 .page-breadcrumb,
 #header-modal-login .action-menu a[data-title="privatefiles,moodle"],
 #footer .footer-tools,
-#page-course-search .course-search-result .teachers {
+#page-course-search .course-search-result .teachers,
+#page-my-index {
     display: none;
 }
