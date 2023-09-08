@@ -102,6 +102,7 @@
 .block_settings,
 .course-info1 .course-meta1 .course-students,
 .page-breadcrumb,
+#header-modal-login .action-menu a[data-title="privatefiles,moodle"],
 #footer .footer-tools,
 #page-course-search .course-search-result .teachers {
     display: none;
