@@ -6,7 +6,9 @@ $(document).ready(function() {
 
     // adjust menus for guest
     if (isGuest) {
-        $('#main-navigation .mitem_home a.mb2mm-action').attr('href', '/lms');
+        // home button mimics main logo button
+        let href = $('#master-header .main-logo a').attr('href');
+        $('#main-navigation .mitem_home a.mb2mm-action').attr('href', href);
     }
     
     // display admin menus
