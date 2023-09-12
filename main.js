@@ -59,6 +59,7 @@ $(document).ready(function() {
     };
     
     $('.course-enrolbtn').each(englishCallback);
+    $('input[type="submit"]').each(englishCallback);
     $('#page-enrol-index #region-main #page-content h2').each(englishCallback);
     $('#page-enrol-index #region-main #page-content .collapsible span.sr-only').each(englishCallback);
     $('#page-enrol-index #region-main #page-content .collapsible h3').each(englishCallback);
