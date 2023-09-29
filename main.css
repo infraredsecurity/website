@@ -11,6 +11,21 @@
     text-align: center;
 }
 
+/* ensure page takes full screen */
+#page-outer,
+#page {
+    height: 100%;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+}
+
+#page-b {
+    flex-grow: 1;
+}
+
 /* hide menus for elevated roles */
 #quicklinks,
 .mitem_users,
