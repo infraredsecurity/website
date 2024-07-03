@@ -5,9 +5,12 @@ $(document).ready(function() {
     let isGuest = $('#master-header .header-tools .tool-login i.fa-user').length <= 0;
     let isSuperAdmin = $('#quicklinks li.item-admin').length > 0;
 
+    console.log('is guest: ' + isGuest + ' isSuperAdmin: ' + isSuperAdmin);
+
     // dashboard 2023 redirect
     if ($('#page-my-index').length > 0) {
         if (!isSuperAdmin) {
+            console.log('fixing redirect...');
             window.location = '/lms/mod/page/view.php?id=102';
         }
     }
@@ -17,6 +20,7 @@ $(document).ready(function() {
         // home button mimics main logo button
         let href = $('#master-header .main-logo a').attr('href');
         $('#main-navigation .mitem_home a.mb2mm-action').attr('href', href);
+        console.log('adjusted menus for guest');
     }
     
     // display super admin stuff
@@ -24,6 +28,7 @@ $(document).ready(function() {
         console.log('enabling super admin stuff...');
         $('#quicklinks').attr('style', 'display: flex !important');
         $('#page-my-index').css('display', 'initial');
+        console.log('adjusted menus for super admin');
     }
 
     // display 'users' and 'reports' if navigation block says so
